@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: Kollektif;
+    src: url(./fonts/Kollektif.ttf) format('truetype');
+    } 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kollektif';
+}
+header{
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+#logoHeader{
+    width: 17.5%;
+    margin-left: 1%;
+}
+
+nav ul li {
+    margin-right: 2%;
+    width: 100%;
+    font-size: 25px;
+}
+
+nav ul{
+    align-items: center;
+    width: 100%;
+
+    margin-left: 3%;
+}
