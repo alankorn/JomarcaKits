@@ -16,16 +16,10 @@ header{
     width: 100%;
     background-image: url('./Images/BG.png');
     background-repeat: round;
-    margin-top: -3%;
+    margin-top: 0%;
     position: relative;
-    max-height: 60%;
 }
 
-.navbar-nav{
-    position: relative;
-    max-width: 100%;
-    margin: 0;
-}
 
 #logoHeader{
     width: 20.5%;
@@ -35,16 +29,16 @@ header{
 }
 
 nav{
-    margin-top: 3%;
-    align-items: center;
+    margin-top: 0%;
     max-width:100%;
     position: relative;
 }
 
 nav ul li {
-    margin-right: 3.5%;
-    font-size: 22px;
-    max-width: 100%;
+    margin-right: 0%;
+    font-size: 20px;
+    max-width: 70%;
+    margin-right: 3%;
     
 }
 .nav-link{
@@ -53,36 +47,21 @@ nav ul li {
 nav ul{
     align-items: center;
     width: 100%;
-
-    margin-left: 8%;
+    margin-left: 0%;
 }
 
 .social{
-    margin-right: 1%;
-    width: 120px;
-}
-
-.areaRep{
-    align-self: flex-end;
+    max-width: 120px;
     margin: 0;
-
 }
 
-#areaRepButton{
-    background-color: #001c9e;
-    border-radius: 9%;
-    padding: 20%;
-    width: 100%;
-    text-align: left;
-    white-space: nowrap;
-    margin-right: 0;
-}
 
 #setaBtn{
-    width: 60px;
+    width: 30px;
+    margin-left: 20%;
     position: relative;
-    top: -30px;
-    left: 90px;   
+    bottom: 15px;
+ 
 }
 
 #areaRepButton a{
@@ -116,10 +95,22 @@ nav ul li a:hover::before{
     width: 100%;
 }
 
+#areaRepBtn{
+    background-color: #001c9e;
+    margin-left: 10px;
+    width: 190px;
+    transition: .2s;
+}
+
+#areaRepBtn:hover{
+    width: 210px;
+    transition: .2s;
+}
+
 #textHeader{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     width: 100%;
-    padding-top: 1rem;
+    
     padding-left: 11%;
     color:#001c9e;
 }
@@ -129,27 +120,33 @@ nav ul li a:hover::before{
 }
 
 #boneco{
-    margin-left: 40%;
-    padding-top: -3%;
-    height: 80%;
+    margin-left: 20%;
+    padding-top: 0;
+    margin-bottom: 0;
+    width: 60%;
 }
 
 #repBtn{
     margin-left: 11%;
     margin-top: 20px;
     background-color: #001c9e;
-    font-size: 50px;
-    width: 500px;
+    font-size: 27px;
+    font-weight: 600;
+    width: 300px;
     text-align: left;
-    line-height: 50px;
+    line-height: 20px;
     transition: .2s;
     border-radius: 15px;
+    padding-top: 20px;
 }
 
 #repBtn:hover{
-    width: 550px;
-    height: 150px;
-    transition: .2s;   
+    width: 320px;
+    transition: .2s; 
+    #setaBtn{
+        margin-left: 21%;
+        transition: .2s;
+    }  
 }
 
 #caminhao{
@@ -162,18 +159,21 @@ nav ul li a:hover::before{
 
 #shape{
     background-image: url(./Images/shape.png);
-    background-size: 100% 330px;
-    width: 100%;
-    position: relative;
-    top: -120px;
-    padding-bottom: 20%;
+    background-size: 103% 330px;
+    width: 101%;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    top: -80px;
+    padding-bottom: 5%; 
     background-repeat: no-repeat;
-    z-index: 2;
+    z-index: 3;
+    left: 0%;
 }
 
 .textoshape{
     padding-top: 10%;
-    font-size:30px;
+    font-size:35px;
     color: White;
 }
 
@@ -181,26 +181,88 @@ main{
     max-width: 100%;
     margin-top: 0px!important;
     position: relative;
-    top: -370px;
     z-index: 1;
     max-height: fit-content;
+    padding-top: 120px;
 }
 
 #atuacao{
     background-image: url(./Images/BGMAIN.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 80px;
 }
 #atuacaoP{
     margin-top:10%;
     font-size: 25px;
     width: 80%;
     text-align: justify;
+    color: #001c9e;
 }
 
-.iframe{
-   
+.destaques{
+    margin: 0;
 }
+
+.paragrafoDestaque{
+    position: relative;
+    top: 30%;
+    text-align: left;
+    padding-right: 10%;
+    left: 18%;
+    width: 70%;
+    font-size: 20px;
+}
+
+#produtoDestaqueIMG{
+    position: relative;
+    left: 10%;
+}
+#produtoDestaque{
+    background-image: url(./Images/BG_Destaque.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#repDestaqueBtn{
+    z-index: 2;
+    background-color: #001c9e;
+    width: 270px;
+    transition: .2s;
+    border-radius: 12px;
+}
+#setaBtnDestaque{
+    position: relative;
+    width: 22px;
+    margin-left: 2%;
+    
+}
+#repDestaqueBtn:hover{
+    width: 278px;
+    transition: .2s;
+    #setaBtnDestaque{
+        margin-left:1%;
+    }
+}
+
+#textoDestaque h2{
+    font-size: 20px;
+}
+
+#textoDestaque{
+    text-align: end;
+    align-items: center;
+    font-size: 15px;
+    width: 3%;
+    position: relative;
+}
+
+#textoDestaqueResponsivo{
+    display: none;
+}
+
+
+
 
 @media (width <= 1000px) {
     *{
@@ -241,7 +303,8 @@ main{
         padding-left: 3%;
         margin-left: 3%;
         margin-bottom: 3%;
-        padding-bottom:15%;
+        padding-bottom:8%;
+        padding-top: 4%;
         z-index: 1;
     }
 
@@ -273,14 +336,17 @@ main{
         background-image: url(./Images/shape.png);
         background-size: 100% 130px;
         width: 100%;
-        position: relative;
-        top:-30px;
-        padding-bottom: 20%;
         background-repeat: no-repeat;
+        top: -30px;
+        margin: 0;
     }
 
     .textoshape{
-        font-size: 12px;
+        font-size: 13.5px;
+        margin-top: 0;
+        position: relative;
+        top: -10px;
+        
     }
 
     #caminhao{
@@ -296,12 +362,11 @@ main{
 
     main{
         position: relative;
-        top:-120px
+        padding-top: 0;
     }
 
     #atuacaoP{
-        margin-top:10%;
-        font-size: 12px;
+        font-size: 13px;
         width: 100%;
         text-align: justify;
     }
@@ -309,6 +374,23 @@ main{
     #atuacao{
         background-repeat: repeat-y;
         padding-bottom: 3%;
+    }
+
+    #produtoDestaque{
+        background-repeat: repeat-y;
+        padding-bottom: 2%;
+    }
+
+    #textoDestaque{
+        display: none;
+    }
+
+    #textoDestaqueResponsivo{
+        display: block;
+        margin-left: 1%;
+        background-color: #f4ce0f;
+        width: 100%;
+        border-radius: 5%;
     }
 
 
