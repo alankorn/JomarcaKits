@@ -439,5 +439,21 @@ main{
         left: 0;
     }
 
+    #principaisProdutos{
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+
+    #principaisProdutos img{
+        margin-bottom: 28px;
+    }
+
+    #imgPequena{
+        width: 300px;
+        margin-left: 8%;
+    }
+    #setaBtnCatalogo{
+        top: 12px;
+    }
 
 }
