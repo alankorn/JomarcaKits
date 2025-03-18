@@ -265,8 +265,42 @@ main{
 #textoDestaqueResponsivo{
     display: none;
 }
+#principaisProdutos{
+    background-image: url(./Images/BG.png);
+    padding: 3% 0%;
+}
+#principaisProdutos h1{
+    text-align: center;
+    padding-bottom: 1%;
+    color: #001c9e;
+}
 
+.imggrande{
+    width: 207px;
+}
 
+#baixeCatalogoBtn{
+    z-index: 2;
+    background-color: #001c9e;
+    width: 300px;
+    transition: .2s;
+    border-radius: 12px;
+    font-size: 22px;
+    margin-top: 3%;
+}
+#setaBtnCatalogo{
+    position: relative;
+    width: 22px;
+    margin-left: 4%;
+    
+}
+#baixeCatalogoBtn:hover{
+    width: 320px;
+    transition: .2s;
+    #setaBtnCatalogo{
+        margin-left:7%;
+    }
+}
 
 
 @media (width <= 1000px) {
