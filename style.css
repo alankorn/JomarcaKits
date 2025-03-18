@@ -302,6 +302,30 @@ main{
     }
 }
 
+#sloganResp{
+    display: none;
+}
+
+#slogan{
+    display:block
+}
+
+#repDestaqueBtnResp{
+    display: none;
+    z-index: 2;
+    background-color: #001c9e;
+    width: 270px;
+    transition: .2s;
+    border-radius: 12px;
+
+}
+#repDestaqueBtnResp:hover{
+    width: 278px;
+    transition: .2s;
+    #setaBtnDestaque{
+        margin-left:1%;
+    }
+}
 
 @media (width <= 1000px) {
     *{
@@ -428,6 +452,7 @@ main{
         height: 70px;
         width: 1200px;
         margin-top: 2%;
+        display: block;
     }
 
     #produtoDestaque{
@@ -435,7 +460,7 @@ main{
         padding-bottom: 2%;
     }
 
-    #repDestaqueBtn{
+    #repDestaqueBtnResp{
         margin-left: 20%;
         margin-top: 3%;
     }
@@ -457,6 +482,10 @@ main{
     #produtoDestaqueIMG{
         position: relative;
         left: 0;
+    }
+
+    #repDestaqueBtnResp{
+        display: block;
     }
 
     #principaisProdutos{
