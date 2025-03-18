@@ -7,7 +7,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Kollektif';
-    max-width: 100%
+    max-width: 100%;
+    overflow-x: visible;
 }
 header{
     max-width: 100%;
@@ -327,6 +328,79 @@ main{
     }
 }
 
+#novidades{
+    margin-left: 8%;
+    margin-top: 4%;
+    color: #001c9e;
+}
+
+#fiquepordentro{
+    text-align: end;
+    margin-top: 4%;
+    margin-right: 8%;
+    color: #001c9e;
+}
+
+#acesseBlogImg{
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: normal;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+    overflow-x: hidden;
+}
+
+#formsContato{
+    background-image: url(./Images/BG.png);
+    padding-left: 7%;
+    padding-top: 3%;
+    padding-right: 7%;
+}
+
+#logoFooter{
+    width: 40%;
+}
+#socialFooter img{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#formsContato h1{
+    color: #001c9e;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+#formsContato label{
+    color: black;
+}
+
+#forms{
+    padding-right: 5%;
+}
+
+#enderecos{
+    color: #001c9e;
+    margin-top: 3%;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      
+    }
+  
+    to {
+      margin-left: 10%;
+     
+    }
+  }
+
 @media (width <= 1000px) {
     *{
         max-width: 100%;
@@ -397,12 +471,12 @@ main{
 
     #shape{
         background-image: url(./Images/Shape.png);
-        background-size: 103% 180px;
+        background-size: 103% 160px;
         width: 100%;
         background-repeat: no-repeat;
         top: -50px;
         margin: 0;
-        padding-top: 5%;
+        padding-top: 3%;
     }
 
     .textoshape{
@@ -430,7 +504,7 @@ main{
 
     main{
         position: relative;
-        padding-top: 26px;
+        padding-top: 12px;
     }
 
     #atuacaoP{
@@ -503,6 +577,18 @@ main{
     }
     #setaBtnCatalogo{
         top: 12px;
+    }
+    #acesseBlogImg{
+        display:none;
+    }
+
+    #logoFooter{
+        width:180px;
+        margin-top: 20%;
+    }
+
+    .socialFooter{
+        width: 30px;
     }
 
 }
