@@ -333,10 +333,10 @@ main{
     }
     #repBtn{
         margin: 0;
-        font-size: 25px;
+        font-size: 20px;
         padding:6px;
         margin-top: 1%;
-        width: 350px;
+        width: 360px;
         height: 50px;
         margin-top: 6%;
         padding-left: 3%;
@@ -373,19 +373,24 @@ main{
 
     #shape{
         background-image: url(./Images/Shape.png);
-        background-size: 103% 130px;
+        background-size: 103% 180px;
         width: 100%;
         background-repeat: no-repeat;
-        top: -30px;
+        top: -50px;
         margin: 0;
+        padding-top: 5%;
     }
 
     .textoshape{
-        font-size: 13.5px;
-        margin-top: 0;
+        font-size: 15px;
+        margin-top: 28px;
         position: relative;
         top: -10px;
         
+    }
+
+    .textoshape br{
+        display: none;
     }
 
     #caminhao{
@@ -401,11 +406,11 @@ main{
 
     main{
         position: relative;
-        padding-top: 0;
+        padding-top: 26px;
     }
 
     #atuacaoP{
-        font-size: 13px;
+        font-size: 20px;
         width: 100%;
         text-align: justify;
     }
@@ -415,9 +420,24 @@ main{
         padding-bottom: 3%;
     }
 
+    #sloganimg{
+        display: none;
+    }
+
+    #sloganResp{
+        height: 70px;
+        width: 1200px;
+        margin-top: 2%;
+    }
+
     #produtoDestaque{
         background-repeat: repeat-y;
         padding-bottom: 2%;
+    }
+
+    #repDestaqueBtn{
+        margin-left: 20%;
+        margin-top: 3%;
     }
 
     #textoDestaque{
