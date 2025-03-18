@@ -333,7 +333,7 @@ main{
     }
 
     #shape{
-        background-image: url(./Images/shape.png);
+        background-image: url(./Images/Shape.png);
         background-size: 103% 130px;
         width: 100%;
         background-repeat: no-repeat;
