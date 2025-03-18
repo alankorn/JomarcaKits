@@ -162,7 +162,7 @@ nav ul li a:hover::before{
     background-size: 103% 330px;
     width: 100%;
     margin: 0;
-    padding-left: 0;
+    padding-left: 2.5%;
     position: absolute;
     top: -80px;
     padding-bottom: 5%; 
@@ -176,6 +176,11 @@ nav ul li a:hover::before{
     font-size:35px;
     color: White;
 }
+
+#meio{
+    margin-left: 5%;
+}
+
 
 main{
     max-width: 100%;
