@@ -160,13 +160,13 @@ nav ul li a:hover::before{
 #shape{
     background-image: url(./Images/Shape.png);
     background-size: 103% 330px;
-    width: 101%;
+    width: 100%;
     margin: 0;
     padding-left: 0;
     position: absolute;
     top: -80px;
     padding-bottom: 5%; 
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     z-index: 3;
     left: 0%;
 }
@@ -334,7 +334,7 @@ main{
 
     #shape{
         background-image: url(./Images/shape.png);
-        background-size: 100% 130px;
+        background-size: 103% 130px;
         width: 100%;
         background-repeat: no-repeat;
         top: -30px;
@@ -391,6 +391,13 @@ main{
         background-color: #f4ce0f;
         width: 100%;
         border-radius: 5%;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    #produtoDestaqueIMG{
+        position: relative;
+        left: 0;
     }
 
 
