@@ -15,12 +15,22 @@ VERSION:	Versoin Number
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 /*  typography */
+
+@font-face {
+  font-family: Kollektif;
+  src: url(../../../fonts/Kollektif.ttf) format('truetype');
+  } 
+
 body {
   line-height: 1.7;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Kollektif", sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #696c6d;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+.social img{
+  width: 40px;
 }
 
 p, .paragraph {
@@ -79,36 +89,49 @@ h6, .h6 {
   box-shadow: none !important;
 }
 
+
+nav ul li a{
+  transition: all .8s;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+
+nav ul li a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:0 ;
+  width: 0%;
+  height: 3px;
+  background-color: #001c9e;
+  transition: width .4s;
+}
+
+nav ul li a:hover::before{
+  width: 100%;
+}
+
 .btn-primary {
   background: #ce8460;
   color: #fff;
   border-color: #ce8460;
 }
-.btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
-  background: #ce8460 !important;
-  border-color: #ce8460 !important;
-}
+
 
 .btn-outline-primary {
   background: transparent;
   color: #696c6d;
   border-color: #ce8460;
 }
-.btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary.focus, .btn-outline-primary.active {
-  background: #ce8460 !important;
-  border-color: #ce8460 !important;
-  color: #fff;
-}
+
 
 .btn-outline-light {
   background: transparent;
   color: #696c6d;
   border-color: #ddd;
 }
-.btn-outline-light:active, .btn-outline-light:hover, .btn-outline-light.focus, .btn-outline-light.active {
-  background: #f0f0f0 !important;
-  border-color: #ddd !important;
-}
+
 
 body {
   background-color: #fff;
@@ -144,11 +167,7 @@ img {
   border: 0;
 }
 
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
-}
+
 
 a,
 button,
@@ -162,9 +181,7 @@ select:focus {
   outline: 0;
 }
 
-a:hover {
-  color: #ce8460;
-}
+
 
 .slick-slide {
   outline: 0;
@@ -292,8 +309,21 @@ a:hover {
 }
 
 .nav-item {
-  margin: 0;
+  padding-top: 2%;
 }
+
+#areaRepBtn{
+  background-color: #001c9e;
+    transition: .2s;
+    border-radius: 10px;
+    align-items: center;
+    border-color: #001c9e;
+}
+
+.social{
+  padding-top: 1%
+}
+
 .nav-item .nav-link {
   text-transform: capitalize;
 }
@@ -301,13 +331,9 @@ a:hover {
 .navbar-white .navbar-nav .nav-link {
   color: #1c1d1f;
 }
-.navbar-white .navbar-nav .nav-link:hover {
-  color: #ce8460;
-}
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 15px 20px;
-}
+
+
 
 .navbar .dropdown:hover .dropdown-menu {
   visibility: visible;
@@ -360,10 +386,6 @@ a:hover {
 }
 .navbar .dropdown-item:not(:last-child) {
   margin-bottom: 10px;
-}
-.navbar .dropdown-item:hover {
-  color: #ce8460 !important;
-  background: transparent;
 }
 
 /* search */
@@ -945,3 +967,25 @@ a:hover {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */
+
+.nav-item li a{
+  transition: all .8s;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+
+.nav-item li a{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:0 ;
+  width: 0%;
+  height: 3px;
+  background-color: #001c9e;
+  transition: width .4s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
