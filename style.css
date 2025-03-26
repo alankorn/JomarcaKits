@@ -346,8 +346,8 @@ main{
     align-items: center;
     margin-left: 10%;
     margin-top: 2%;
-    animation-duration: 3s;
-    animation-name: slidein;
+    animation-duration: 6s;
+    animation-name: moveToRight;
     animation-direction: normal;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
@@ -390,17 +390,15 @@ main{
     margin-top: 3%;
 }
   
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      
+@keyframes moveToRight {
+    0% {
+      transform: translateX(-100%);
     }
-  
-    to {
-      margin-left: 10%;
-     
+    100% {
+      transform: translateX(0%);
     }
   }
+    
 
 @media (width <= 1000px) {
     *{
