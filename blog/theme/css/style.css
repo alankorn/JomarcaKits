@@ -94,6 +94,7 @@ nav ul li a{
   transition: all .8s;
   position: relative;
   padding-bottom: 3px;
+  color: #001c9e;
 }
 
 
@@ -312,12 +313,14 @@ select:focus {
   padding-top: 2%;
 }
 
+
 #areaRepBtn{
   background-color: #001c9e;
     transition: .2s;
     border-radius: 10px;
     align-items: center;
     border-color: #001c9e;
+    font-weight: 600;
 }
 
 .social{
