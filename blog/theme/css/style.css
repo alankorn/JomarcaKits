@@ -121,9 +121,48 @@ nav ul li a:hover::before{
 
 
 .btn-outline-primary {
-  background: transparent;
-  color: #696c6d;
-  border-color: #ce8460;
+  background: #001c9e;
+  color: white;
+  border-color: #001c9e;
+  border-radius: 10px;
+}
+
+/* estilização footer */
+
+#formsContato{
+  background-image: url(../../../Images/BG.png);
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-right: 7%;
+}
+
+#logoFooter{
+  width: 40%;
+}
+#socialFooter img{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#formsContato h1{
+  color: #001c9e;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+#formsContato label{
+  color: black;
+}
+
+#forms{
+  padding-right: 5%;
+}
+
+#enderecos{
+  color: #001c9e;
+  margin-top: 3%;
 }
 
 
@@ -298,16 +337,7 @@ select:focus {
   border-color: #ddd !important;
 }
 
-.form-control:focus {
-  outline: 0;
-  box-shadow: none;
-}
-.form-control::-moz-placeholder {
-  font-size: 80%;
-}
-.form-control::placeholder {
-  font-size: 80%;
-}
+
 
 .nav-item {
   padding-top: 2%;
@@ -334,10 +364,6 @@ select:focus {
 .navbar-white .navbar-nav .nav-link {
   color: #1c1d1f;
 }
-
-
-
-
 .navbar .dropdown:hover .dropdown-menu {
   visibility: visible;
   opacity: 1;
@@ -799,21 +825,7 @@ select:focus {
   display: inline-block;
 }
 
-.form-group label {
-  font-size: 13px;
-  color: #1c1d1f;
-}
-.form-group .form-control {
-  border-color: #ddd;
-}
-.form-group .form-control:focus {
-  outline: 0;
-  box-shadow: none;
-  border-color: #ce8460;
-}
-.form-group textarea.form-control {
-  height: 120px;
-}
+
 
 .widget {
   background: #fff;
