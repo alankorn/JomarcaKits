@@ -29,6 +29,10 @@ body {
   font-size: 18px;
 }
 
+.negrito{
+  font-weight: 600;
+}
+
 .social img{
   width: 40px;
 }
