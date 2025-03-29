@@ -101,17 +101,17 @@
                 </tbody>
             </table>
         </div>
-        
-        <script>
-            $(document).ready(function() {
-                $("#searchInput").on("keyup", function() {
-                    var value = $(this).val().toLowerCase();
-                    $("#tableBody tr").filter(function() {
-                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                    });
-                });
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#searchInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#tableBody tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
             });
-        </script>
+        });
+    });
+</script>
     </main>
 
     <footer>
