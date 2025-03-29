@@ -21,6 +21,17 @@ VERSION:	Versoin Number
   src: url(../../../fonts/Kollektif.ttf) format('truetype');
   } 
 
+  #creditos a{
+    text-decoration: none;
+    color: white;
+}
+
+#creditos{
+    color: white;
+    background-color: #001c9e;
+    padding: 0.3%;
+}
+
 body {
   line-height: 1.7;
   font-family: "Kollektif", sans-serif;
