@@ -21,15 +21,57 @@ VERSION:	Versoin Number
   src: url(../../../fonts/Kollektif.ttf) format('truetype');
   } 
 
-  #creditos a{
-    text-decoration: none;
-    color: white;
+#logoFooter{
+  width: 40%;
+}
+.socialFooter{
+  margin-bottom: 4%;
+}
+
+#localidades{
+  line-height: 20px;
+  padding-top: 12px;
+  
+}
+
+#localidades .col-sm{
+  padding-top: 12px;
+}
+
+
+footer{
+  background-image: url(../../../Images/BG.png);
+  color: #001c9e;
+  padding-top: 2%;
+  font-weight: 500;
+  line-height: 30%;
 }
 
 #creditos{
-    color: white;
-    background-color: #001c9e;
-    padding: 0.3%;
+  background-color: #001c9e;
+  color: white;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+#creditos a{
+  color: white;
+}
+
+@media (width <= 1000px){
+  #creditos{
+    font-size:15px;
+    line-height: 25px;
+  }
+
+  footer{
+    background-image: url(../../../Images/BGYellowResp.png);
+    background-size: 100%;
+  }
+}
+
+footer h1{
+  color: #001c9e;
 }
 
 body {
@@ -144,41 +186,7 @@ nav ul li a:hover::before{
 
 /* estilização footer */
 
-#formsContato{
-  background-image: url(../../../Images/BG.png);
-  padding-left: 7%;
-  padding-top: 3%;
-  padding-right: 7%;
-}
 
-#logoFooter{
-  width: 40%;
-}
-#socialFooter img{
-  margin: 0;
-  padding: 0;
-}
-
-
-
-#formsContato h1{
-  color: #001c9e;
-  font-weight: 600;
-  margin-top: 40px;
-}
-
-#formsContato label{
-  color: black;
-}
-
-#forms{
-  padding-right: 5%;
-}
-
-#enderecos{
-  color: #001c9e;
-  margin-top: 3%;
-}
 
 
 .btn-outline-light {
