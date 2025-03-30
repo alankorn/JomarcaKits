@@ -356,6 +356,10 @@ main{
     overflow-x: hidden;
 }
 
+#acesseBlogImgResp{
+    display: none;
+}
+
 #formsContato{
     background-image: url(./Images/BG.png);
     padding-left: 7%;
@@ -536,7 +540,7 @@ main{
     }
 
     #atuacao{
-        background-repeat: repeat-y;
+        background-image: url(./Images/BGVideoResp.png);
         padding-bottom: 3%;
     }
 
@@ -552,7 +556,7 @@ main{
     }
 
     #produtoDestaque{
-        background-repeat: repeat-y;
+        background-image: url(./Images/BGDestResp.png);
         padding-bottom: 2%;
     }
 
@@ -585,6 +589,7 @@ main{
     }
 
     #principaisProdutos{
+        background-image: url(./Images/BGYellowResp.png);
         background-size: 100%;
         background-repeat: repeat-y;
     }
@@ -614,6 +619,19 @@ main{
     }
     #acesseBlogImg{
         display:none;
+    }
+
+    #acesseBlogImgResp{
+        display: block;
+        align-items: center;
+        margin-left: 0%;
+        margin-top: 2%;
+        animation-duration: 6s;
+        animation-name: moveToRight;
+        animation-direction: normal;
+        animation-timeline: view();
+        animation-range: cover 0% cover 50%;
+        overflow-x: hidden;
     }
 
     #logoFooter{
