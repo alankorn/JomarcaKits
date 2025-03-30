@@ -630,4 +630,12 @@ main{
         font-size: 40px;
     }
 
+    #enderecos{
+        margin-left: 10px;
+    }
+
+    #creditos .col{
+        margin-left: 20px;
+    }
+
 }
