@@ -431,6 +431,7 @@ main{
     }
     header{
         padding-bottom: 10%;
+        background-image: url(./Images/BGYellowResp.png);
     }
     #logoHeader{
         width: 170px;
@@ -493,6 +494,11 @@ main{
         left: 220px;
         top: -32px;
 
+    }
+
+    #formsContato{
+        background-image: url(./Images/BGYellowResp.png);
+        background-size: 100%;
     }
 
     #shape{
@@ -635,7 +641,7 @@ main{
     }
 
     #logoFooter{
-        width:180px;
+        width:130px;
         margin-top: 10%;
     }
 
@@ -646,6 +652,7 @@ main{
 
     footer h1{
         font-size: 40px;
+        margin-top: 0;
     }
 
     #enderecos{
