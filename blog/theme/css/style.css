@@ -34,6 +34,10 @@ VERSION:	Versoin Number
   
 }
 
+.nav-item{
+  font-size: 21px;
+}
+
 #localidades .col-sm{
   padding-top: 12px;
 }

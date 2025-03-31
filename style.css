@@ -641,8 +641,8 @@ main{
     }
 
     #logoFooter{
-        width:130px;
-        margin-top: 10%;
+        width:70%;
+        margin-top:6%;
     }
 
     .socialFooter{
@@ -656,7 +656,7 @@ main{
     }
 
     #enderecos{
-        margin-left: 10px;
+        margin-left: 2px;
     }
 
     #creditos .col{
