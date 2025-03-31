@@ -172,12 +172,17 @@ nav ul li a::before{
 
 nav ul li a:hover::before{
   width: 100%;
+  color: #001c9e;
 }
 
 .btn-primary {
-  background: #ce8460;
+  background: #001c9e;
   color: #fff;
-  border-color: #ce8460;
+  border-color: #001c9e;
+}
+
+.nav-link:hover{
+  color: #001c9e;
 }
 
 
@@ -189,9 +194,6 @@ nav ul li a:hover::before{
 }
 
 /* estilização footer */
-
-
-
 
 .btn-outline-light {
   background: transparent;
@@ -550,8 +552,8 @@ select:focus {
   border: 1px solid #ddd;
 }
 .social-icons-rounded a:hover {
-  color: #ce8460;
-  border-color: #ce8460;
+  color: #001c9e;
+  border-color: #001c9e;
 }
 
 .post-slider {
@@ -624,7 +626,7 @@ select:focus {
   color: #696c6d;
 }
 .pagination .page-item .page-link:hover {
-  background: #ce8460;
+  background: #001c9e;
   color: #fff;
 }
 .pagination .page-item .page-link:focus {
@@ -1035,6 +1037,7 @@ nav ul li a:hover::before{
 .continue:hover{
     background-color: #f4ce0f;
     color: #001c9e;
+    border-color: #f4ce0f;
 }
 
 p{

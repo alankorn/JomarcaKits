@@ -10,6 +10,8 @@
     max-width: 100%;
     overflow-x: visible;
 }
+
+
 header{
     max-width: 100%;
     align-items: center;
@@ -62,6 +64,7 @@ nav ul{
     margin-left: 20%;
     position: relative;
     bottom: 15px;
+
  
 }
 
@@ -102,6 +105,8 @@ nav ul{
     width: 190px;
     transition: .2s;
     margin-left: 20%;
+    border-color: #001c9e;
+    
 }
 
 
@@ -142,6 +147,7 @@ nav ul{
     transition: .2s;
     border-radius: 15px;
     padding-top: 20px;
+    border-color: #001c9e;
 }
 
 #repBtn:hover{
@@ -239,6 +245,7 @@ main{
     width: 270px;
     transition: .2s;
     border-radius: 12px;
+    border-color: #001c9e;
 }
 #setaBtnDestaque{
     position: relative;
@@ -290,6 +297,7 @@ main{
     transition: .2s;
     border-radius: 12px;
     font-size: 22px;
+    border-color: #001c9e;
     margin-top: 3%;
 }
 #setaBtnCatalogo{
@@ -321,6 +329,7 @@ main{
     width: 270px;
     transition: .2s;
     border-radius: 12px;
+    border-color: #001c9e;
 
 }
 #repDestaqueBtnResp:hover{
@@ -341,19 +350,40 @@ main{
     text-align: end;
     margin-top: 4%;
     margin-right: 8%;
+    font-size: 30px;
     color: #001c9e;
 }
 
 #acesseBlogImg{
     align-items: center;
-    margin-left: 10%;
+    margin-left: 17%;
     margin-top: 2%;
-    animation-duration: 6s;
+    animation-duration: 10s;
     animation-name: moveToRight;
     animation-direction: normal;
     animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    animation-range: cover 0% cover 60%;
     overflow-x: hidden;
+}
+
+#acesseBlogBtn{
+    z-index: 2;
+    background-color: #001c9e;
+    width: 300px;
+    transition: .2s;
+    border-radius: 12px;
+    font-size: 22px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-color: #001c9e;
+}
+
+#acesseBlogBtn:hover{
+    width: 320px;
+    transition: .2s;
+    #setaBtnCatalogo{
+        margin-left:7%;
+    }
 }
 
 #acesseBlogImgResp{
@@ -376,7 +406,7 @@ main{
 }
 
 #materiasBlog{
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 #formsContato h1{
@@ -411,6 +441,7 @@ main{
 
 .sendBtn{
     background-color: #001c9e;
+    border-color: #001c9e;
 }
   
 @keyframes moveToRight {
@@ -466,6 +497,10 @@ main{
         padding-bottom:8%;
         padding-top: 4%;
         z-index: 1;
+    }
+
+    #fiquepordentro{
+        font-size: 15px;
     }
 
     #repBtn:hover{
@@ -630,6 +665,23 @@ main{
     }
     #acesseBlogImg{
         display:none;
+    }
+
+    #acesseBlogBtn{
+        margin: 0;
+        font-size: 28px;
+        margin-top: 1%;
+        width: 360px;
+        height: 70px;
+        padding-left: 3%;
+        margin-bottom: 3%;
+        padding-bottom:1%;
+        text-align: center;
+        margin-left: 3%;
+    }
+
+    #acesseBlogBtn #setaBtnCatalogo{
+         top: 0px;
     }
 
     #acesseBlogImgResp{
