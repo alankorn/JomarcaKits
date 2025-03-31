@@ -217,7 +217,7 @@ main{
     position: relative;
     top: 30%;
     text-align: left;
-    padding-right: 10%;
+    padding-right: 2%;
     left: 18%;
     width: 70%;
     font-size: 20px;
@@ -375,7 +375,9 @@ main{
     padding: 0;
 }
 
-
+#materiasBlog{
+    padding: 5% 0;
+}
 
 #formsContato h1{
     color: #001c9e;
@@ -510,7 +512,10 @@ main{
         margin: 0;
         padding-top: 3%;
     }
-
+    #materiasBlog .col-sm{
+        margin-top: 2%;
+        margin-left: 3%;
+    }
     .textoshape{
         font-size: 15px;
         margin-top: 28px;

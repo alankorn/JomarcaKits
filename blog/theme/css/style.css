@@ -494,7 +494,7 @@ select:focus {
   color: #1c1d1f;
 }
 .post-title:hover {
-  color: #ce8460;
+  color: #001c9e;
 }
 
 .post-meta li {
@@ -506,7 +506,7 @@ select:focus {
   border-bottom: 1px dotted #ddd;
 }
 .post-meta a:hover {
-  color: #ce8460;
+  color: #001c9e;
 }
 
 .recent-thumb-alt {
@@ -533,7 +533,7 @@ select:focus {
   font-size: 14px;
 }
 .social-icons a:hover {
-  color: #ce8460;
+  color: #001c9e;
 }
 
 .social-icons-rounded {
@@ -596,7 +596,7 @@ select:focus {
   outline: 0;
 }
 .slick-arrow:hover {
-  background: #ce8460;
+  background: #001c9e;
 }
 
 .prevArrow {
@@ -661,7 +661,7 @@ select:focus {
   border-bottom: 1px dotted #ddd;
 }
 .content a:hover {
-  color: #ce8460;
+  color: #001c9e;
 }
 .content ol,
 .content ul {
@@ -1030,4 +1030,14 @@ select:focus {
 
 nav ul li a:hover::before{
     width: 100%;
+}
+
+.continue:hover{
+    background-color: #f4ce0f;
+    color: #001c9e;
+}
+
+p{
+  color: #000;
+  font-size: 18px;
 }
