@@ -8,621 +8,838 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <style>
-          body {
-              background-color: #f8f9fa;
-          }
-          .container {
-              background: white;
-              padding: 20px;
-              border-radius: 10px;
-              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-          }
-          h2 {
-              text-align: center;
-              margin-bottom: 20px;
-              color: #001c9e;
-          }
-          .table {
-              background: white;
-              border-radius: 10px;
-              overflow: hidden;
-          }
-          .table th {
-              background-color: #001c9e;
-              color: white;
-              text-align: center;
-          }
-          .table tbody tr:hover {
-              background-color: #f1f1f1;
-          }
-          .form-control, .form-select {
-              border-radius: 5px;
-          }
-      </style>
-      <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
-      <link rel="icon" href="./Images/logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #001c9e;
+            color: #fff;
+        }
+
+        .nav-tabs .nav-link {
+            color: #001c9e;
+        }
+
+        .table th {
+            background-color: #001c9e;
+            color: white;
+        }
+
+        .dropdown-menu {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .dropdown-toggle {
+            background-color: white;
+            color: #001c9e;
+            border: 1px solid #001c9e;
+        }
+
+        .dropdown-toggle:hover,
+        .dropdown-toggle:focus {
+            background-color: #f0f0f0;
+            color: #001c9e;
+        }
+    </style>
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <link rel="icon" href="./Images/logo.png" type="image/x-icon">
 </head>
 
 <body>
     <header style="background-repeat: repeat-x;">
         <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <img id="logoHeader" src="./Images/logo.png" alt="" srcset="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html#shape" style="color:#001c9e ;">Sobre nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./blog/theme/blog.html" style="color:#001c9e ;">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./blog/source/Catalogo.pdf" target="_blank" style="color:#001c9e ;">Catálogo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./representantes.html" style="color:#001c9e ;">Representantes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#forms" style="color:#001c9e ;">Contato</a>
-              </li>
-              <li class="nav-item social">
-                <a class="nav-link" href="https://www.facebook.com/jomarcakits/" target="_blank">
-                  <img src="Images/Facebook.png" alt="" srcset="">
-                </a>
-              </li>
-              <li class="nav-item social">
-                <a class="nav-link" href="https://www.instagram.com/jomarcakits/#" target="_blank">
-                  <img src="Images/Instagram.png" alt="" srcset="">
-                </a>
-              </li>
-              <li class="nav-item social">
-                <a class="nav-link" href="https://www.youtube.com/@jomarcakits6064" target="_blank">
-                  <img src="Images/YouTube.png" alt="" srcset="">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://agspainel.com.br/jomarca/auth/login.php" target="_blank"><button type="button" class="btn btn-primary" id="areaRepBtn" style="margin-left: 0;">Área do Representante</button></a>  
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            <div class="container-fluid">
+                <img id="logoHeader" src="./Images/logo.png" alt="" srcset="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#shape" style="color:#001c9e ;">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog/theme/blog.html" style="color:#001c9e ;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog/source/Catalogo.pdf" target="_blank"
+                                style="color:#001c9e ;">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./representantes.html" style="color:#001c9e ;">Representantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#forms" style="color:#001c9e ;">Contato</a>
+                        </li>
+                        <li class="nav-item social">
+                            <a class="nav-link" href="https://www.facebook.com/jomarcakits/" target="_blank">
+                                <img src="Images/Facebook.png" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <a class="nav-link" href="https://www.instagram.com/jomarcakits/#" target="_blank">
+                                <img src="Images/Instagram.png" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <a class="nav-link" href="https://www.youtube.com/@jomarcakits6064" target="_blank">
+                                <img src="Images/YouTube.png" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://agspainel.com.br/jomarca/auth/login.php" target="_blank"><button
+                                    type="button" class="btn btn-primary" id="areaRepBtn" style="margin-left: 0;">Área
+                                    do Representante</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main style="margin: 0; padding: 0;">
-      
-        <div class="container mt-4">
-            <h2>Conheça os nossos representantes!</h2>
+
+        <div class="container mt-5">
+            <h2 style="color: #001c9e;" class="text-center">Conheça nossos representantes!</h2>
+
             <div class="row mb-3">
                 <div class="col-md-4">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar...">
+                    <input type="text" id="search" class="form-control"
+                        placeholder="Pesquisar por representação ou região...">
                 </div>
                 <div class="col-md-4">
-                  <select id="regionFilter" class="form-select">
-                    <option value="">Todas as Regiões</option>
-                    <option value="Amazonas">Amazonas</option>
-                    <option value="Alagoas">Alagoas</option>
-                    <option value="Bahia">Bahia</option>
-                    <option value="Belo Horizonte - Minas Gerais">Belo Horizonte - Minas Gerais</option>
-                    <option value="Campinas">Campinas</option>
-                    <option value="Campinas e região">Campinas e região</option>
-                    <option value="Caratinga - Minas Gerais">Caratinga - Minas Gerais</option>
-                    <option value="Ceará">Ceará</option>
-                    <option value="Curitiba - Região metropolitana">Curitiba - Região metropolitana</option>
-                    <option value="Espirito Santo">Espirito Santo</option>
-                    <option value="Florianopolis - Região metropolitana">Florianopolis - Região metropolitana</option>
-                    <option value="Goiânia">Goiânia</option>
-                    <option value="Litoral">Litoral</option>
-                    <option value="Maringuá - Norte do Paraná">Maringuá - Norte do Paraná</option>
-                    <option value="Mato Grosso">Mato Grosso</option>
-                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                    <option value="Minas Gerais">Minas Gerais</option>
-                    <option value="Mirassol">Mirassol</option>
-                    <option value="Maranhão">Maranhão</option>
-                    <option value="Pernambuco">Pernambuco</option>
-                    <option value="Paraíba">Paraíba</option>
-                    <option value="Pará">Pará</option>
-                    <option value="Piauí">Piauí</option>
-                    <option value="Rio de Janeiro">Rio de Janeiro</option>
-                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                    <option value="Rondônia">Rondônia</option>
-                    <option value="Santa Catarina">Santa Catarina</option>
-                    <option value="São Paulo - Região Metropolitana">São Paulo - Região Metropolitana</option>
-                    <option value="Sul de Minas Gerais">Sul de Minas Gerais</option>
-                    <option value="Sergipe">Sergipe</option>
-                    <option value="Tocatins">Tocatins</option>
-                    <option value="Tupã e região">Tupã e região</option>
-                </select>
-                
-                
-              </div>
-              <div class="col-md-4">
-                <select id="stateFilter" class="form-select">
-                  <option value="">Todos os Estados</option>
-                  <option value="AL">Alagoas</option>
-                  <option value="AM">Amazonas</option>
-                  <option value="BA">Bahia</option>
-                  <option value="CE">Ceará</option>
-                  <option value="DF">Distrito Federal</option>
-                  <option value="ES">Espírito Santo</option>
-                  <option value="GO">Goiás</option>
-                  <option value="MA">Maranhão</option>
-                  <option value="MG">Minas Gerais</option>
-                  <option value="MS">Mato Grosso do Sul</option>
-                  <option value="MT">Mato Grosso</option>
-                  <option value="PA">Pará</option>
-                  <option value="PB">Paraíba</option>
-                  <option value="PE">Pernambuco</option>
-                  <option value="PI">Piauí</option>
-                  <option value="PR">Paraná</option>
-                  <option value="RJ">Rio de Janeiro</option>
-                  <option value="RN">Rio Grande do Norte</option>
-                  <option value="RO">Rondônia</option>
-                  <option value="RS">Rio Grande do Sul</option>
-                  <option value="SC">Santa Catarina</option>
-                  <option value="SE">Sergipe</option>
-                  <option value="SP">São Paulo</option>
-                  <option value="TO">Tocantins</option>
-              </select>
-              
-              </div>
-          </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle w-100" type="button" id="dropdownEstado"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Filtrar por Estado
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="dropdownEstado">
+                            <li><a class="dropdown-item" href="#" data-value="">Todos</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="AC">Acre (AC)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="AL">Alagoas (AL)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="AP">Amapá (AP)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="AM">Amazonas (AM)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="BA">Bahia (BA)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="CE">Ceará (CE)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="DF">Distrito Federal (DF)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="ES">Espírito Santo (ES)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="GO">Goiás (GO)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="MA">Maranhão (MA)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="MT">Mato Grosso (MT)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="MS">Mato Grosso do Sul (MS)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="MG">Minas Gerais (MG)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="PA">Pará (PA)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="PB">Paraíba (PB)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="PR">Paraná (PR)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="PE">Pernambuco (PE)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="PI">Piauí (PI)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="RJ">Rio de Janeiro (RJ)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="RN">Rio Grande do Norte (RN)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="RS">Rio Grande do Sul (RS)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="RO">Rondônia (RO)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="RR">Roraima (RR)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="SC">Santa Catarina (SC)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="SP">São Paulo (SP)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="SE">Sergipe (SE)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="TO">Tocantins (TO)</a></li>
+                        </ul>
+                    </div>
 
-          <div class="table-responsive">
-            <table class="table table-striped table-bordered text-center">
-                <thead>
-                    <tr>
-                        <th>Representação</th>
-                        <th>Região</th>
-                        <th>Estado</th>
-                        <th>Telefone</th>
-                        <th>E-mail</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <tr>
-                        <td>A.DE SOUZA TEIXEIRA REPRESENTACOES</td>
-                        <td>Brasília</td>
-                        <td>DF</td>
-                        <td>(61) 9103-7427</td>
-                        <td>teixeirabsl@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>ADS & REPRESENTACOES LTDA ME</td>
-                        <td>Rio grande do Norte</td>
-                        <td>RN</td>
-                        <td>(84) 9626-6366</td>
-                        <td>rosarcomerciais@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>ALPHA COMERCIO E REPRESENTACOES</td>
-                        <td>Maranhão</td>
-                        <td>MA</td>
-                        <td>(99) 9126-1520</td>
-                        <td>maurobmarinho@outlook.com</td>
-                    </tr>
-                    <tr>
-                        <td>REPRESENTAÇÕES AMARAL E DANELON</td>
-                        <td>Belo Horizonte - Minas Gerais</td>
-                        <td>MG</td>
-                        <td>(31) 9188-4802</td>
-                        <td>danelon1988@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>CAPANEMA & CABRAL REPRESENTAÇÕES</td>
-                        <td>Sul de Minas Gerais</td>
-                        <td>MG</td>
-                        <td>(31) 9332-9398</td>
-                        <td>felipeitaly@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>CEDRO - RICARDO</td>
-                        <td>Sergipe</td>
-                        <td>SE</td>
-                        <td>(71) 9164-0414</td>
-                        <td>vendashsflorence@outlook.com</td>
-                    </tr>
-                    <tr>
-                        <td>CEDRO - RICARDO</td>
-                        <td>Bahia</td>
-                        <td>BA</td>
-                        <td>(71) 9164-0414</td>
-                        <td>vendashsflorence@outlook.com</td>
-                    </tr>
-                    <tr>
-                        <td>CELSO GARCIA</td>
-                        <td>São Paulo - Região metropolitana</td>
-                        <td>SP</td>
-                        <td>(19) 98139-5328</td>
-                        <td>garciacelso.filho@gmail.com</td>
-                    </tr>
-                 
-                    <tr>
-                        <td>CNG CAFE FIX REPRESENTACAO</td>
-                        <td>Maringuá - Norte do Paraná</td>
-                        <td>RP</td>
-                        <td>(43) 9681-3308</td>
-                        <td>claudionei.giroldo@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>CONTARELLI LIMA</td>
-                        <td>São Paulo - Região metropolitana</td>
-                        <td>SP</td>
-                        <td>(11) 99156-9600</td>
-                        <td>e.jlima@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>A.DANTAS AMORIM REPRESENTACOES</td>
-                        <td>Alagoas</td>
-                        <td>AL</td>
-                        <td>(81) 9965-3569</td>
-                        <td>dantas.rep@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>A.DANTAS AMORIM REPRESENTACOES</td>
-                        <td>Pernambuco</td>
-                        <td>PE</td>
-                        <td>(81) 9965-3569</td>
-                        <td>dantas.rep@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>DOZE REPRESENTACOES LTDA</td>
-                        <td>Tupã e região</td>
-                        <td>SP</td>
-                        <td>(14) 99710-3459</td>
-                        <td>sandalus@sandalusrepres.com.br</td>
-                    </tr>
-                    <tr>
-                        <td>DPG REPRESENTACOES COMERCIAIS LTDA</td>
-                        <td>Caxias do Sul - Serra Gaucho</td>
-                        <td>RS</td>
-                        <td>(54) 9711-7777</td>
-                        <td>eloi.repre@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>DU CARNES REPRESENTAÇÕES EIRELLI</td>
-                        <td>Rio de Janeiro</td>
-                        <td>RJ</td>
-                        <td>(21) 97636-4831</td>
-                        <td>arnaldos841@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>EQUIPAFIX REPRESENTACOES LTDA ME</td>
-                        <td>São Paulo - Região metropolitana</td>
-                        <td>SP</td>
-                        <td>(11) 97676-5056</td>
-                        <td>vendas@equipafix.com.br</td>
-                    </tr>
-                    <tr>
-                        <td>GENIVAL COMERCIO E REPRESENTACOES</td>
-                        <td>Ceará</td>
-                        <td>CE</td>
-                        <td>(85) 9900-0020</td>
-                        <td>genival@genivalrepresentacoes.com.br</td>
-                    </tr>
-                    <tr>
-                        <td>H SANTOS</td>
-                        <td>Campinas e região</td>
-                        <td>SP</td>
-                        <td>(19) 99166-7715</td>
-                        <td>hsantos.representantes@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>IDEAL REPRESENTAÇÕES</td>
-                        <td>Espirito Santo</td>
-                        <td>ES</td>
-                        <td>(27) 99601-0758</td>
-                        <td>deborah.rep@outlook.com</td>
-                    </tr>
-                    <tr>
-                        <td>ITAUNA PRIME REPRESENTACOES</td>
-                        <td>Oeste Catarinense</td>
-                        <td>SC</td>
-                        <td>(49) 9992-8455</td>
-                        <td>manducacco@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <td>MESSIAS LEITE REPRESENTACOES LTDA</td>
-                      <td>Paraíba</td>
-                      <td>PB</td>
-                      <td>(83) 8650-2651</td>
-                      <td>messiasfarias2016@gmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>MAV COMERCIO DE REP</td>
-                      <td>Curitiba - Região metropolitana</td>
-                      <td>PR</td>
-                      <td>(41) 99125-9525</td>
-                      <td>mav_marcos@hotmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>MESSIAS REPRESENTACOES MAT DE</td>
-                      <td>Tocatins</td>
-                      <td>TO</td>
-                      <td>(63) 8122-2655</td>
-                      <td>manoelrep2016@gmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>NOVA OPCAO- OSVALD M F AMARAL</td>
-                      <td>Amazonas</td>
-                      <td>AM</td>
-                      <td>(92) 8804-0526</td>
-                      <td>novaopcao2009@gmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>RC DISTRIBUIDORA E REPRESENTACOES</td>
-                      <td>Caratinga - Minas Gerais</td>
-                      <td>MG</td>
-                      <td>(33) 99912-0003</td>
-                      <td>rcgvendas@hotmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>RIBAMAR REPRESENTACOES</td>
-                      <td>Piauí</td>
-                      <td>PI</td>
-                      <td>(86) 9981-4792</td>
-                      <td>ribasantos@bol.com.br</td>
-                  </tr>
-                  <tr>
-                      <td>ANJOS AMARAL COM E</td>
-                      <td>Florianópolis - Região metropolitana</td>
-                      <td>SC</td>
-                      <td>(48) 9982-4149</td>
-                      <td>rifati@terra.com.br</td>
-                  </tr>
-                  <tr>
-                      <td>ROSA REPRESENTACOES</td>
-                      <td>Maranhão</td>
-                      <td>MA</td>
-                      <td>(98) 98418-9641</td>
-                      <td>rosarcomerciais@gmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>RPGN REPRESENTAÇÕES</td>
-                      <td>Litoral</td>
-                      <td>SP</td>
-                      <td>(13) 99776-5694</td>
-                      <td>rpgneves@hotmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>R.S. REPRESENTACAO DO COMERCIO DE</td>
-                      <td>Rondônia</td>
-                      <td>RO</td>
-                      <td>(69) 9604-5475</td>
-                      <td>rd.escritorio1@gmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>SP BIG REPRESENTACOES (SP)</td>
-                      <td>São Paulo - Região metropolitana</td>
-                      <td>SP</td>
-                      <td>(11) 98947-4369</td>
-                      <td>rachelspbig@gmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>TAMOYO REPRESENTAÇÕES</td>
-                      <td>Mato Grosso do Sul</td>
-                      <td>MS</td>
-                      <td>(67) 9241-7629</td>
-                      <td>reptamoyo@terra.com.br</td>
-                  </tr>
-                  <tr>
-                      <td>MARDEN REPRESENTAÇÕES</td>
-                      <td>Goiânia</td>
-                      <td>GO</td>
-                      <td>(62) 9923-5008</td>
-                      <td>marden@ghnquimica.com</td>
-                  </tr>
-                  <tr>
-                      <td>MARIA DE FATIMA MATIAS F. REPRES</td>
-                      <td>São Paulo - Região metropolitana</td>
-                      <td>SP</td>
-                      <td>(11) 97101-2302</td>
-                      <td>tuca.jomarca@gmail.com</td>
-                  </tr>
-                  <tr>
-                      <td>V.F.P MONTEIRO REPRESENTAÇÕES</td>
-                      <td>Pará</td>
-                      <td>PA</td>
-                      <td>(91) 8387-2363</td>
-                      <td>tekamonteiro2014@outlook.com</td>
-                  </tr>
-                  <tr>
-                    <td>RHK REPRESENTACOES COMERCIAIS LTDA</td>
-                    <td>Mirassol</td>
-                    <td>SP</td>
-                    <td>(17) 99617-7522</td>
-                    <td>vendas@amaismirassol.com.br</td>
-                </tr>
-                <tr>
-                    <td>JOINFIX REPRESENTACOES COMERCIAIS</td>
-                    <td>Santa Catarina</td>
-                    <td>SC</td>
-                    <td>(47) 9109-7555</td>
-                    <td>joinfix.airton@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>AP REPRESENTACOES LTDA ME</td>
-                    <td>Espirito Santo</td>
-                    <td>ES</td>
-                    <td>(27) 99724-2100</td>
-                    <td>roberto@jomarcakits.com.br</td>
-                </tr>
-                <tr>
-                    <td>VALARINI REP.MÓVEIS LTDA</td>
-                    <td>Americana e Região</td>
-                    <td>SP</td>
-                    <td>(19) 99179-7099</td>
-                    <td>francisco@cifrarepresentacoes.net</td>
-                </tr>
-                <tr>
-                    <td>CARLOS ALESSANDRO MATOS-ME</td>
-                    <td>Bahia</td>
-                    <td>BA</td>
-                    <td>(75) 9912-8254</td>
-                    <td>matosrepresent@hotmail.com</td>
-                </tr>
-                <tr>
-                    <td>LARANJA REPRESENTACOES LTDA</td>
-                    <td>Campinas</td>
-                    <td>SP</td>
-                    <td>(19) 99128-9554</td>
-                    <td>laranja.repres@yahoo.com.br</td>
-                </tr>
-                <tr>
-                    <td>CARLOS HENRIQUE GALHARDO ME</td>
-                    <td>Paraná</td>
-                    <td>PR</td>
-                    <td>(43) 9671-0504</td>
-                    <td>srv_representacoes@hotmail.com</td>
-                </tr>
-                <tr>
-                    <td>CPM- FERRAMENTAS INDUSTRIAIS COM</td>
-                    <td>Paraná</td>
-                    <td>PR</td>
-                    <td>(43) 9959-8902</td>
-                    <td>cpmvendas@onda.com.br</td>
-                </tr>
-                <tr>
-                    <td>LAROCCA REPRESENTACOES LTDA</td>
-                    <td>Ceará</td>
-                    <td>CE</td>
-                    <td>(85) 9992-2572</td>
-                    <td>gilmar.masisa@hotmail.com</td>
-                </tr>
-                <tr>
-                    <td>MCS REPRESENTACOES LTDA</td>
-                    <td>Rio Grande do Sul</td>
-                    <td>RS</td>
-                    <td>(54) 9369-4593</td>
-                    <td>marciele@mcsrepresentacoes.com.br</td>
-                </tr>
-                <tr>
-                    <td>PRO NOVA</td>
-                    <td>Minas Gerais</td>
-                    <td>MG</td>
-                    <td>(32) 9913-9000</td>
-                    <td>vendas@prorepresentacoes.com.br</td>
-                </tr>
-                
-                  
-                  </tbody>
-              </table>
-          </div>
-          
+                </div>
+                <div class="col-md-4">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle w-100" type="button" id="dropdownRegiao"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Filtrar por Região
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="dropdownRegiao">
+                            <li><a class="dropdown-item" href="#" data-value="">Todas</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Alagoas">Alagoas</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Amazonas">Amazonas</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    data-value="Americana e região (Brasil - Bucha)">Americana e região (Brasil -
+                                    Bucha)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Bahia">Bahia</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Belo Horizonte - Minas Gerais">Belo
+                                    Horizonte - Minas Gerais</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Brasília">Brasília</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Campinas e região">Campinas e Região</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-value="Caratinga - Minas Gerais">Caratinga -
+                                    Minas Gerais</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Caxias do Sul - Serra Gaúcha">Caxias do
+                                    Sul - Serra Gaúcha</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Ceará">Ceará</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Curitiba - Região Metropolitana">Curitiba
+                                    - Região Metropolitana</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Espírito Santo">Espírito Santo</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    data-value="Florianópolis - Região Metropolitana">Florianópolis - Região
+                                    Metropolitana</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Goiânia">Goiânia</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Litoral">Litoral</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Maranhão">Maranhão</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Maringá - Norte do Paraná">Maringá - Norte
+                                    do Paraná</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Mato Grosso">Mato Grosso</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Mato Grosso do Sul">Mato Grosso do Sul</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-value="Minas Gerais">Minas Gerais</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Oeste Catarinense">Oeste Catarinense</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-value="Pará">Pará</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Paraíba">Paraíba</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Pernambuco">Pernambuco</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Piauí">Piauí</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Rio de Janeiro">Rio de Janeiro</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Rio Grande do Norte">Rio Grande do
+                                    Norte</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Rondônia">Rondônia</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="São Paulo - Região metropolitana">São
+                                    Paulo - Região Metropolitana</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Sergipe">Sergipe</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Sul de Minas Gerais">Sul de Minas
+                                    Gerais</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Tocantins">Tocantins</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="Tupã e Região">Tupã e Região</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="varejo-tab" data-bs-toggle="tab" data-bs-target="#varejo"
+                        type="button" role="tab">Varejo</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="industria-tab" data-bs-toggle="tab" data-bs-target="#industria"
+                        type="button" role="tab">Indústria</button>
+                </li>
+            </ul>
+
+            <div class="tab-content mt-3" id="myTabContent">
+                <div class="tab-pane fade show active table-responsive" id="varejo" role="tabpanel">
+                    <table class="table table-striped" id="tableVarejo">
+                        <thead>
+                            <tr>
+                                <th>Representação</th>
+                                <th>Região</th>
+                                <th>Estado</th>
+                                <th>Telefone</th>
+                                <th>E-mail</th>
+                                <th>Segmento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A.DE SOUZA TEIXEIRA REPRESENTACOES</td>
+                                <td>Centro-Oeste</td>
+                                <td>DF</td>
+                                <td>(61) 9103-7427</td>
+                                <td>teixeirabsl@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>A.DE SOUZA TEIXEIRA REPRESENTACOES</td>
+                                <td>Brasília</td>
+                                <td>DF</td>
+                                <td>(61) 9103-7427</td>
+                                <td>teixeirabsl@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>A.DANTAS AMORIM REPRESENTACOES</td>
+                                <td>Alagoas</td>
+                                <td>AL</td>
+                                <td>(81) 9965-3569</td>
+                                <td>dantas.rep@hotmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>A.DANTAS AMORIM REPRESENTACOES</td>
+                                <td>Pernambuco</td>
+                                <td>PE</td>
+                                <td>(81) 9965-3569</td>
+                                <td>dantas.rep@hotmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>ADS & REPRESENTACOES LTDA ME</td>
+                                <td>Rio grande do Norte</td>
+                                <td>RN</td>
+                                <td>(84) 9626-6366</td>
+                                <td>rosarcomerciais@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>ALPHA COMERCIO E REPRESENTACOES</td>
+                                <td>Maranhão</td>
+                                <td>MA</td>
+                                <td>(99) 9126-1520</td>
+                                <td>maurobmarinho@outlook.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>ANJOS AMARAL COM E</td>
+                                <td>Florianopolis - Região metrpolitana</td>
+                                <td>SC</td>
+                                <td>(48) 9982-4149</td>
+                                <td>rifati@terra.com.br</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>CAPANEMA & CABRAL REPRESENTAÇÕES</td>
+                                <td>Sul de Minas Gerais</td>
+                                <td>MG</td>
+                                <td>(31) 9332-9398</td>
+                                <td>felipeitaly@hormail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>CEDRO - RICARDO</td>
+                                <td>Sergipe</td>
+                                <td>SE</td>
+                                <td>(71) 9164-0414</td>
+                                <td>vendashsflorence@outlook.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>CEDRO - RICARDO</td>
+                                <td>Bahia</td>
+                                <td>BA</td>
+                                <td>(71) 9164-0414</td>
+                                <td>vendashsflorence@outlook.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>CELSO GARCIA</td>
+                                <td>São Paulo - Região metropolitana</td>
+                                <td>SP</td>
+                                <td>(19) 98139-5328</td>
+                                <td>garciacelso.filho@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>CNG CAFE FIX REPRESENTACAO</td>
+                                <td>Maringuá - Norte do Paraná</td>
+                                <td>RP</td>
+                                <td>(43) 9681-3308</td>
+                                <td>claudionei.giroldo@hotmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>CONTARELLI LIMA</td>
+                                <td>São Paulo - Região metropolitana</td>
+                                <td>SP</td>
+                                <td>(11) 99156-9600</td>
+                                <td>e.jlima@hotmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>DOZE REPRESENTACOES LTDA</td>
+                                <td>Tupã e região</td>
+                                <td>SP</td>
+                                <td>(14) 99710-3459</td>
+                                <td>sandalus@sandalusrepres.com.br</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>DPG REPRESENTACOES COMERCIAIS LTDA</td>
+                                <td>Caxias do Sul - Serra Gaucho</td>
+                                <td>RS</td>
+                                <td>(54) 9711- 7777</td>
+                                <td>eloi.repre@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>DU CARNES REPRESENTAÇÕES EIRELLI</td>
+                                <td>Rio de Janeiro</td>
+                                <td>RJ</td>
+                                <td>(21) 97636-4831</td>
+                                <td>arnaldos841@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>EQUIPAFIX REPRESENTACOES LTDA ME</td>
+                                <td>São Paulo - Região metropolitana</td>
+                                <td>SP</td>
+                                <td>(11) 97676-5056</td>
+                                <td>vendas@equipafix.com.br</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>GENIVAL COMERCIO E REPRESENTACOES</td>
+                                <td>Ceará</td>
+                                <td>CE</td>
+                                <td>(85) 9900-0020</td>
+                                <td>genival@genivalrepresentacoes.com.br</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>H SANTOS</td>
+                                <td>Campinas e região</td>
+                                <td>SP</td>
+                                <td>(19) 99166-7715</td>
+                                <td>hsantos.representantes@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>IDEAL REPRESENTAÇÕES</td>
+                                <td>Espirito Santo</td>
+                                <td>ES</td>
+                                <td>(27) 99601-0758</td>
+                                <td>deborah.rep@outlook.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>ITAUNA PRIME REPRESENTACOES</td>
+                                <td>Oeste Catarinense</td>
+                                <td>SC</td>
+                                <td>(49) 9992-8455</td>
+                                <td>manducacco@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>MARDEN REPRESENTAÇÕES</td>
+                                <td>Goiânia</td>
+                                <td>GO</td>
+                                <td>(62) 9923-5008</td>
+                                <td>marden@ghnquimica.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>MARIA DE FATIMA MATIAS F. REPRES</td>
+                                <td>São Paulo - Região metropolitana</td>
+                                <td>SP</td>
+                                <td>(11) 97101-2302</td>
+                                <td>tuca.jomarca@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>MAV COMERCIO DE REP</td>
+                                <td>Curitiba - Região metropolitana</td>
+                                <td>PR</td>
+                                <td>(41) 99125-9525</td>
+                                <td>mav_marcos@hotmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>MESSIAS LEITE REPRESENTACOES LTDA</td>
+                                <td>Paraíba</td>
+                                <td>PB</td>
+                                <td>(83) 8650-2651</td>
+                                <td>messiasfarias2016@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>MESSIAS REPRESENTACOES MAT DE</td>
+                                <td>Tocatins</td>
+                                <td>TO</td>
+                                <td>(63) 8122-2655</td>
+                                <td>manoelrep2016@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>NOVA OPCAO- OSVALD M F AMARAL</td>
+                                <td>Amazonas</td>
+                                <td>AM</td>
+                                <td>(92) 8804-0526</td>
+                                <td>novaopcao2009@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>RC DISTRIBUIDORA E REPRESENTACOES</td>
+                                <td>Caratinga - Minas Gerais</td>
+                                <td>MG</td>
+                                <td>(33) 99912-0003</td>
+                                <td>rcgvendas@hotmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>RIBAMAR REPRESENTACOES</td>
+                                <td>Piauí</td>
+                                <td>PI</td>
+                                <td>(86) 9981-4792</td>
+                                <td>ribasantos@bol.com.br</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>ROSA REPRESENTACOES</td>
+                                <td>Maranhão</td>
+                                <td>MA</td>
+                                <td>(98) 98418-9641</td>
+                                <td>rosarcomerciais@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>RPGN REPRESENTACOES</td>
+                                <td>Litoral</td>
+                                <td>SP</td>
+                                <td>(13) 99776-5694</td>
+                                <td>rpgneves@hotmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>SP BIG REPRESENTACOES (SP)</td>
+                                <td>São Paulo - Região metropolitana</td>
+                                <td>SP</td>
+                                <td>(11) 98947-4369</td>
+                                <td>rachelspbig@gmail.com</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>TAMOYO REPRESENTAÇOES</td>
+                                <td>Mato Grosso do Sul</td>
+                                <td>MS</td>
+                                <td>(67) 9241-7629</td>
+                                <td>reptamoyo@terra.com.br</td>
+                                <td>Varejo</td>
+                            </tr>
+                            <tr>
+                                <td>V.F.P MONTEIRO REPRESENTAÇÕES</td>
+                                <td>Pará</td>
+                                <td>PA</td>
+                                <td>(91) 8387-2363</td>
+                                <td>tekamonteiro2014@outlook.com</td>
+                                <td>Varejo</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tab-pane fade table-responsive" id="industria" role="tabpanel">
+                    <table class="table table-striped" id="tableIndustria">
+                        <thead>
+                            <tr>
+                                <th>Representação</th>
+                                <th>Região</th>
+                                <th>Estado</th>
+                                <th>Telefone</th>
+                                <th>E-mail</th>
+                                <th>Segmento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ap Representações Ltda ME</td>
+                                <td>Espírito Santo</td>
+                                <td>ES</td>
+                                <td>(27) 99724-2100</td>
+                                <td>roberto@jomarcakits.com.br</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Alessandro Matos ME</td>
+                                <td>Bahia</td>
+                                <td>BA</td>
+                                <td>(75) 9912-8254</td>
+                                <td>matosrepresent@hotmail.com</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Henrique Galhardo ME</td>
+                                <td>Paraná</td>
+                                <td>PR</td>
+                                <td>(43) 9671-0504</td>
+                                <td>srv_representacoes@hotmail.com</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Código Certo Repres. Comerciais</td>
+                                <td>Santa Catarina</td>
+                                <td>SC</td>
+                                <td>(49) 9981-4090</td>
+                                <td>codigocertorc@gmail.com</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>CPM Ferramentas Industriais Com</td>
+                                <td>Paraná</td>
+                                <td>PR</td>
+                                <td>(43) 9959-8902</td>
+                                <td>cpmvendas@onda.com.br</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Joinfix Representações Comerciais</td>
+                                <td>Santa Catarina</td>
+                                <td>SC</td>
+                                <td>(47) 9109-7555</td>
+                                <td>joinfix.airton@gmail.com</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Laranja Representações Ltda</td>
+                                <td>Campinas</td>
+                                <td>SP</td>
+                                <td>(19) 99128-9554</td>
+                                <td>laranja.repres@yahoo.com.br</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Larocca Representações Ltda</td>
+                                <td>Ceará</td>
+                                <td>CE</td>
+                                <td>(85) 9992-2572</td>
+                                <td>gilmar.masisa@hotmail.com</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>MCS Representações Ltda</td>
+                                <td>Rio Grande do Sul</td>
+                                <td>RS</td>
+                                <td>(54) 9369-4593</td>
+                                <td>marciele@mcsrepresentacoes.com.br</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Pro Nova</td>
+                                <td>Minas Gerais</td>
+                                <td>MG</td>
+                                <td>(32) 9913-9000</td>
+                                <td>vendas@prorepresentacoes.com.br</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>RHK Representações Comerciais Ltda</td>
+                                <td>Mirassol</td>
+                                <td>SP</td>
+                                <td>(17) 99617-7522</td>
+                                <td>vendas@amaismirassol.com.br</td>
+                                <td>Indústria</td>
+                            </tr>
+                            <tr>
+                                <td>Valarini Rep. Móveis Ltda</td>
+                                <td>Americana e região (Brasil - Bucha)</td>
+                                <td>SP</td>
+                                <td>(19) 99179-7099</td>
+                                <td>francisco@cifrarepresentacoes.net</td>
+                                <td>Indústria</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+
         <script>
-            $(document).ready(function () {
-                $('#searchInput').on('keyup', function () {
-                    var value = $(this).val().toLowerCase();
-                    $('#tableBody tr').filter(function () {
-                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            document.addEventListener("DOMContentLoaded", function () {
+                // Filtro de Estado e Região
+                document.querySelectorAll(".dropdown-menu .dropdown-item").forEach(item => {
+                    item.addEventListener("click", function (event) {
+                        event.preventDefault(); // Evita que a página role para o topo ao clicar
+
+                        let dropdownButton = this.closest(".dropdown").querySelector(".dropdown-toggle");
+                        let dropdownMenu = this.closest(".dropdown-menu");
+
+                        dropdownButton.textContent = this.textContent; // Atualiza o botão com a opção selecionada
+                        let filterType = dropdownButton.id.includes("Estado") ? 2 : 1; // Define qual coluna filtrar (Estado ou Região)
+                        let value = this.getAttribute("data-value");
+
+                        // Identifica a aba ativa (Varejo ou Indústria)
+                        let activeTab = document.querySelector(".tab-pane.active");
+                        let table = activeTab.querySelector("table tbody");
+
+                        table.querySelectorAll("tr").forEach(row => {
+                            let cellValue = row.cells[filterType].innerText.trim();
+                            row.style.display = (value === "" || cellValue === value) ? "" : "none";
+                        });
+
+                        dropdownMenu.classList.remove("show"); // Fecha o dropdown após selecionar uma opção
                     });
                 });
-                
-                $('#regionFilter').on('change', function () {
-                    var region = $(this).val().toLowerCase();
-                    $('#tableBody tr').filter(function () {
-                        $(this).toggle(region === "" || $(this).find('td:nth-child(2)').text().toLowerCase() === region);
+
+                // Filtro de Pesquisa por Representação ou Região
+                document.getElementById("search").addEventListener("input", function () {
+                    let searchText = this.value.toLowerCase();
+
+                    // Identifica a aba ativa (Varejo ou Indústria)
+                    let activeTab = document.querySelector(".tab-pane.active");
+                    let table = activeTab.querySelector("table tbody");
+
+                    table.querySelectorAll("tr").forEach(row => {
+                        let representation = row.cells[0].innerText.toLowerCase();
+                        let region = row.cells[1].innerText.toLowerCase();
+                        row.style.display = (representation.includes(searchText) || region.includes(searchText)) ? "" : "none";
                     });
                 });
-    
-                $('#stateFilter').on('change', function () {
-                    var state = $(this).val().toLowerCase();
-                    $('#tableBody tr').filter(function () {
-                        $(this).toggle(state === "" || $(this).find('td:nth-child(3)').text().toLowerCase() === state);
+
+                // Garantir que os dropdowns do Bootstrap funcionem corretamente
+                var dropdowns = document.querySelectorAll('.dropdown-toggle');
+                dropdowns.forEach(dropdown => {
+                    dropdown.addEventListener('click', function () {
+                        let menu = this.nextElementSibling;
+                        menu.classList.toggle('show'); // Exibe ou oculta o menu
+
+                        // Fecha outros dropdowns abertos
+                        document.querySelectorAll('.dropdown-menu.show').forEach(openMenu => {
+                            if (openMenu !== menu) openMenu.classList.remove('show');
+                        });
                     });
+                });
+
+                // Fecha dropdowns ao clicar fora deles
+                document.addEventListener('click', function (e) {
+                    if (!e.target.matches('.dropdown-toggle') && !e.target.closest('.dropdown-menu')) {
+                        document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+                            menu.classList.remove('show');
+                        });
+                    }
                 });
             });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const varejoBtn = document.getElementById("varejo-tab");
+                const industriaBtn = document.getElementById("industria-tab");
+                const dropdownToggle = document.getElementById("dropdownRegiaoToggle"); // Botão do dropdown
+                const dropdownMenu = document.getElementById("dropdownRegiao"); // Lista de opções do dropdown
+                const searchInput = document.getElementById("searchInput");
+                const tabelas = document.querySelectorAll("table"); // Todas as tabelas
+
+                function resetFilters() {
+                    // Resetar o campo de busca
+                    if (searchInput) {
+                        searchInput.value = "";
+                        searchInput.dispatchEvent(new Event("input"));
+                    }
+
+                    // Resetar o dropdown para "Todas"
+                    const defaultOption = dropdownMenu.querySelector("a[data-value='']");
+                    if (defaultOption) {
+                        if (dropdownToggle) {
+                            dropdownToggle.innerText = "Todas"; // Atualiza visualmente o botão do dropdown
+                        }
+                        defaultOption.click();
+                    }
+
+                    // Exibir todas as linhas de todas as tabelas
+                    tabelas.forEach(tabela => {
+                        const linhas = tabela.querySelectorAll("tbody tr");
+                        linhas.forEach(linha => {
+                            linha.style.display = "";
+                        });
+                    });
+                }
+
+                if (varejoBtn && industriaBtn) {
+                    varejoBtn.addEventListener("click", function () {
+                        resetFilters();
+                    });
+
+                    industriaBtn.addEventListener("click", function () {
+                        resetFilters();
+                    });
+                }
+            });
+
+
         </script>
-    
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     </main>
 
     <footer>
 
         <section id="formsContato">
-          <div class="row">
-            <div class="col">
-              <img id="logoFooter" src="./Images/logo.png" alt="" srcset="">   
-              
-              <br>
-              <h1>
-                Precisou?<br>Chamou!
-              </h1>  
-              <a href="https://www.facebook.com/jomarcakits/"><img class="socialFooter" src="./Images/Facebook.png" alt="" srcset=""></a>	
+            <div class="row">
+                <div class="col">
+                    <img id="logoFooter" src="./Images/logo.png" alt="" srcset="">
 
-              <a href="https://www.instagram.com/jomarcakits/"><img class="socialFooter" src="./Images/Instagram.png" alt="" srcset=""></a>	
-    
-              <a href="https://www.youtube.com/@jomarcakits6064"><img class="socialFooter" src="./Images/YouTube.png" alt="" srcset=""></a>	
-              
-            </div>
-            <div class="col-md-6" id="forms">
-                <div class="col" id="forms">
-                    <form action="https://formsubmit.co/f6768d5ce515e778a36d52ae2ea65a20" method="post">
-                      <div class="form-floating mb-3">
-                        <input type="text" name="Nome" class="form-control" id="floatingInput" placeholder="">
-                      <label for="floatingInput">Nome</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="number" name="Telefone" class="form-control" id="floatingInput" placeholder="(xx)xxxx-xxxx">
-                      <label for="floatingInput">Telefone</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="email" name="E-mail" class="form-control" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">E-mail</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="text" name="Assunto " class="form-control" id="floatingInput" placeholder="">
-                      <label for="floatingInput">Assunto</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="text" name="Mensagem" class="form-control" id="floatingInput" placeholder="">
-                      <label for="floatingInput">Mensagem</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary" style="background-color: #001c9e;">Enviar</button>
-                      </div>
+                    <br>
+                    <h1>
+                        Precisou?<br>Chamou!
+                    </h1>
+                    <a href="https://www.facebook.com/jomarcakits/"><img class="socialFooter"
+                            src="./Images/Facebook.png" alt="" srcset=""></a>
+
+                    <a href="https://www.instagram.com/jomarcakits/"><img class="socialFooter"
+                            src="./Images/Instagram.png" alt="" srcset=""></a>
+
+                    <a href="https://www.youtube.com/@jomarcakits6064"><img class="socialFooter"
+                            src="./Images/YouTube.png" alt="" srcset=""></a>
+
+                </div>
+                <div class="col-md-6" id="forms">
+                    <div class="col" id="forms">
+                        <form action="https://formsubmit.co/f6768d5ce515e778a36d52ae2ea65a20" method="post">
+                            <div class="form-floating mb-3">
+                                <input type="text" name="Nome" class="form-control" id="floatingInput" placeholder="">
+                                <label for="floatingInput">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" name="Telefone" class="form-control" id="floatingInput"
+                                    placeholder="(xx)xxxx-xxxx">
+                                <label for="floatingInput">Telefone</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" name="E-mail" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">E-mail</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" name="Assunto " class="form-control" id="floatingInput"
+                                    placeholder="">
+                                <label for="floatingInput">Assunto</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" name="Mensagem" class="form-control" id="floatingInput"
+                                    placeholder="">
+                                <label for="floatingInput">Mensagem</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary"
+                                style="background-color: #001c9e;">Enviar</button>
+                    </div>
                     </form>
-            </div>
-            <div class="row text-center" id="enderecos">
-              <div class="col-sm">
-               <span class="negrito">Jomarca Kits - São Paulo</span><br>
-        Rua Cordilheira dos Andes, S/N - Galpão 3 - Cond. Village  Itaquaquecetuba/SP - CEP: 08587-330
-        <br><span class="negrito">Telefone: (11) 4648-5320</span> 
-              </div>
-              <div class="col-sm">
-                <span class="negrito">Jomarca Parafusos</span><br>
-                Rua João Alfredo, 367 - Cumbica  Guarulhos/SP - CEP: 07224-120
-        <br><span class="negrito">Telefone: (11) 2488-1211</span> 
-              </div>
-              <div class="col-sm">
-                <span class="negrito">Jomarca Kits - Mirassol</span><br>
-                Avenida Eng. Newton Flávio Silva Pinto, 1391<br> 
-                São Pedro - Mirassol/SP - CEP: 15130-000
-        <br><span class="negrito">Telefone: (17) 3243-7373</span> 
-              </div>
-            </div>
+                </div>
+                <div class="row text-center" id="enderecos">
+                    <div class="col-sm">
+                        <span class="negrito">Jomarca Kits - São Paulo</span><br>
+                        Rua Cordilheira dos Andes, S/N - Galpão 3 - Cond. Village Itaquaquecetuba/SP - CEP: 08587-330
+                        <br><span class="negrito">Telefone: (11) 4648-5320</span>
+                    </div>
+                    <div class="col-sm">
+                        <span class="negrito">Jomarca Parafusos</span><br>
+                        Rua João Alfredo, 367 - Cumbica Guarulhos/SP - CEP: 07224-120
+                        <br><span class="negrito">Telefone: (11) 2488-1211</span>
+                    </div>
+                    <div class="col-sm">
+                        <span class="negrito">Jomarca Kits - Mirassol</span><br>
+                        Avenida Eng. Newton Flávio Silva Pinto, 1391<br>
+                        São Pedro - Mirassol/SP - CEP: 15130-000
+                        <br><span class="negrito">Telefone: (17) 3243-7373</span>
+                    </div>
+                </div>
         </section>
 
         <section id="creditos">
             <div class="row text-center">
                 <div class="col">
-                  Copyright © 2025 – Todos os direitos reservados
+                    Copyright © 2025 – Todos os direitos reservados
                 </div>
                 <div class="col">
-                 <a href="https://www.instagram.com/gattonoaquario/">Desenvolvido por: Gatto no Aquário</a> 
+                    <a href="https://www.instagram.com/gattonoaquario/">Desenvolvido por: Gatto no Aquário</a>
                 </div>
-              </div>
+            </div>
             </div>
         </section>
-      </footer>
+    </footer>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
